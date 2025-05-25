@@ -6,6 +6,6 @@ const storageRouter = Router();
 
 storageRouter.post('/:folder', multer_parser.single('file'), pushObject);
 storageRouter.patch('/', multer_parser.single('file'), updateObject);
-storageRouter.delete('/', multer_parser.single('file'), removeObject);
+storageRouter.delete('/', removeObject);
 
 export { storageRouter }
