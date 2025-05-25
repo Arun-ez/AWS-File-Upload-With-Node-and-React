@@ -66,7 +66,7 @@ const updateObject = async (req, res) => {
 
 const removeObject = async (req, res) => {
 
-    const { url } = req.body;
+    const { url } = req.query;
 
     if (!url) {
         return res.status(404).send({ message: 'Url not found' });
